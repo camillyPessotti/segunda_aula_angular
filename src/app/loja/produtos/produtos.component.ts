@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,20 +9,20 @@ import {Router} from '@angular/router';
 })
 export class ProdutosComponent implements OnInit {
 
-  ListaProdutos= [
-    1,12,14,2,53,19
+  ListaProdutos = [
+    1, 12, 14, 2, 53, 19
   ]
   constructor(
-    private router:Router,
-  ) { 
+    private router: Router,
+  ) {
 
   }
 
   ngOnInit() {
   }
 
-  abrirProduto(produto){
-    this.router.navigate(['/produto/', produto])
+  abrirProduto(produto) {
+    this.router.navigate(['loja/produto/', produto])
   }
 
 }

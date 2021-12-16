@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 
 @Component({
@@ -12,15 +12,15 @@ export class ProdutoComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private router: Router
-  ) { 
+  ) {
 
-    this.idProduto=route.snapshot.paramMap.get('id');
+    this.idProduto = route.snapshot.paramMap.get('id');
   }
 
   ngOnInit() {
   }
-voltar(){
-  this.router.navigate(['/produto/'])
-}
+  voltar() {
+    this.router.navigate(['loja/produto/'])
+  }
 
 }
